@@ -7,7 +7,6 @@ let app = express();
 // chamando as rotas
 let indexRouter = require("./src/routes/index");
 
-
 // usando as rotas
 app.use("/", indexRouter);
 
@@ -15,5 +14,3 @@ app.use("/", indexRouter);
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, "public")));
-
-
