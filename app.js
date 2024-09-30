@@ -1,5 +1,6 @@
-let express = require("express");
-let path = require("path");
+const express = require("express");
+const path = require("path");
+const mysql = require("mysql");
 require('dotenv/config');
 
 let app = express();

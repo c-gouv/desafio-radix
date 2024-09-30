@@ -1,12 +1,211 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Desafio Radix</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap');
+        *{
+            margin: 0;
+            font-family: "Kumbh Sans", sans-serif;
+            font-weight: 700;
+        }
+        body{
+            padding-inline: 20px;
+            padding-top: 20px;
+            gap: 20px;
+            display: flex;
+            flex-direction: column;
+        }
+        .a{
+            box-sizing: border-box;
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+            padding-block: 15px;
+            padding-inline: 20px;
+        }
+        .registro-header{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .registro-header-right{
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+        }
+        .registro-header-right select option{
+            border-radius: 0;
+        }
+        .table-registro{
+            width:100%;
+            border-top: 0;
+        }
+        .table-registro th {
+            opacity: 0.5;
+            padding-block: 5px;
+            text-align: start;
+        }
+        .table-registro,.table-registro th,.table-registro td{
+            border-collapse: collapse;
+            padding-inline: 20px;
+        }
+        .table-registro td{
+            padding-bottom: 5px;
+        }
+
+
+        .container-caixa{
+            display: flex;
+            flex-direction: row;
+            gap: 2%;
+        }
+        .caixa{
+            width: 100%;
+            border: 1px solid black;
+            border-radius: 10px;
+            padding-block: 10px;
+            padding-inline: 20px;
+        }
+        .caixa h3{
+            text-align: center;
+        }
+        .caixa table{
+            width: 100%;
+        }
+        .caixa table tr{
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 5px;
+        }
+        .caixa th{
+            opacity: 0.5;
+        }
+        .see-more{
+            opacity: 0.5;
+            justify-content: center;
+            display: flex;
+        }
+        .see-more span:hover{
+            cursor: pointer;
+            text-decoration: underline;
+        }
+
+        header{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header select{
+            font-size: 16px;
+            padding-inline: 10px;
+            padding-block: 5px;
+            border-radius: 20px;
+            font-weight: 500;
+        }
+        .right-header{
+            align-items: center;
+            display: flex;
+            gap: 5px;
+            font-size: 18px;
+        }
+    </style>
 </head>
 <body>
-    <div id="root"></div>
-    <script type="module" src="../src/App.jsx"></script>
+    <header>
+        <h1>RESUMO</h1>
+        <div class="right-header">
+            <span>Período:</span>
+            <select>
+                <option value="">24 Horas</option>
+                <option value="">48 Horas</option>
+                <option value="">1 Semana</option>
+                <option value="">1 Mês</option>
+            </select>
+        </div>
+    </header>
+
+    <div class="container-caixa">
+        <div class="caixa">
+            <h3>MAIORES MÉDIAS</h3>
+            <table>
+                <tr>
+                    <th>ID Sensor</th>
+                    <th>Média</th>
+                </tr>
+                <tr>
+                    <td>EQ-12492</td>
+                    <td>78.3</td>
+                </tr>
+                <tr>
+                    <td>EQ-12492</td>
+                    <td>78.3</td>
+                </tr>
+                <tr>
+                    <td>EQ-12492</td>
+                    <td>78.3</td>
+                </tr>
+                <tr>
+                    <td>EQ-12492</td>
+                    <td>78.3</td>
+                </tr>
+                <tr>
+                    <td>EQ-12492</td>
+                    <td>78.3</td>
+                </tr>
+            </table>
+            <div class="see-more">
+                <span>Ver mais</span>
+            </div>
+        </div>
+        <div class="caixa">
+            <h3>MENORES MÉDIAS</h3>
+    
+        </div>
+        <div class="caixa">
+            <h3>MAIORES VALORES REGISTRADOS</h3>
+    
+        </div>
+    </div>
+
+    <div class="a">
+        <div class="registro-header">
+            <h3>TODAS AS MÉDIAS</h3>
+            <div class="registro-header-right">
+                <select id="">
+                    <option value="" disabled selected hidden>Filtro</option>
+                    <option>Menor valor</option>
+                    <option>Maior valor</option>
+                    <option>Mais recente</option>
+                    <option>Maior valor</option>
+                </select>
+                <input type="search" placeholder="ID do Sensor">
+            </div>
+        </div>
+        <table class="table-registro">
+            <tr>
+                <th>ID do Equipamento</th>
+                <th>Data</th>
+                <th>Valor</th>
+            </tr>
+            <tr>
+                <td>EQ-12495</td>
+                <td>12/03/2023</td>
+                <td>78.3</td>
+            </tr>
+            <tr>
+                <td>EQ-12492</td>
+                <td>12/03/2023</td>
+                <td>8.8</td>
+            </tr>
+        </table>
+    </div>
+
+
+    <!-- <div id="root"></div> -->
+    <!-- <script type="module" src="../src/App.jsx"></script> -->
 </body>
 </html>
