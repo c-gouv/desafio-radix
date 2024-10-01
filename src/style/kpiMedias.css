@@ -1,0 +1,35 @@
+.container-caixa{
+    display: flex;
+    flex-direction: row;
+    gap: 2%;
+}
+.caixa{
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding-block: 10px;
+    padding-inline: 20px;
+}
+.caixa h3{
+    text-align: center;
+}
+.caixa table{
+    width: 100%;
+}
+.caixa table tr{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 5px;
+}
+.caixa th{
+    opacity: 0.5;
+}
+.see-more{
+    opacity: 0.5;
+    justify-content: center;
+    display: flex;
+}
+.see-more span:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}

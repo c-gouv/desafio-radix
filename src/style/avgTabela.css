@@ -1,0 +1,37 @@
+.registro-container{
+    box-sizing: border-box;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+    padding-block: 15px;
+    padding-inline: 20px;
+}
+.registro-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.registro-header-right{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.registro-header-right select option{
+    border-radius: 0;
+}
+.table-registro{
+    width:100%;
+    border-top: 0;
+}
+.table-registro th {
+    opacity: 0.5;
+    padding-block: 5px;
+    text-align: start;
+}
+.table-registro,.table-registro th,.table-registro td{
+    border-collapse: collapse;
+    padding-inline: 20px;
+}
+.table-registro td{
+    padding-bottom: 5px;
+}
