@@ -1,0 +1,13 @@
+[Finalizar]--------
+- Transformar os arquivos CSV na controller em objetos
+- Enviar os objetos para o banco
+- PEDIR CHAMADO PARA BAIXAR O MYSQL SERVER & WORKBENCH
+
+[Recentes]---------
+- Recebendo arquivo no componente e enviando pra controller
+- Configuração do notebook
+
+[Major]------------
+- Organização das pastas
+- Componentização dos elementos
+- Páginas/rotas no front

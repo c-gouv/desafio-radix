@@ -13,3 +13,7 @@ function importarArquivos(req, res){
         console.log('registros')
     });
 }
+
+module.exports= {
+    importarArquivos
+};
