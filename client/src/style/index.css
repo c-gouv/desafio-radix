@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap');
+*{
+  margin: 0;
+  font-family: "Kumbh Sans", sans-serif;
+  font-weight: 700;
+}
+body{
+  padding-inline: 25px;
+  padding-top: 25px;
+}
+#root{
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+}
