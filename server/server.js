@@ -14,12 +14,12 @@ const corsOptions = {
 
 // Chamando as rotas
 const indexRouter = require("./routes/index");
-// const csvRouter = require("./routes/csvRouter");
+const csvRouter = require("./routes/csvRouter");
 
 // Usando as rotas
 app.use(cors(corsOptions));
 app.use("/api", indexRouter);
-// app.use("/csv", csvRouter);
+app.use("/upload", csvRouter);
 
 app.listen(portaApp, function(){
     console.log(`

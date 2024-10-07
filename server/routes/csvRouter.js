@@ -1,9 +1,9 @@
 const express = require('express');
-const router = express.Router();
-const csvController = require('../controllers/csvController');
+const upload = require('../middlewares/uploadMiddleware');
+const etlArquivos = require('../controllers/csvController');
 
-router.post("/upload", function (res,req) {
-    csvController.importarArquivos(req, res);
-});
+const router = express.Router();
+
+router.post('/upload', upload.single('file'), etlArquivos);
 
 module.exports = router;

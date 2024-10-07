@@ -58,6 +58,21 @@ body{
     font-size: 20px;
 }
 
+/* .archive-name{
+    color: blue !important;
+} */
+.archive-name:hover{
+    color: red !important;
+}
+.archive-label:hover{
+    
+    span{
+        color: red;    
+    }
+}
+
+
+
 .guide-text{
     padding: 0;
 }
