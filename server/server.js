@@ -1,6 +1,6 @@
 // let ambienteProcesso= 'producao';
-let ambienteProcesso= 'desenvolvimento;'
-let caminhoEnv = ambienteProcesso == 'producao' ? '.env' : '.env.dev'
+let ambienteProcesso= 'desenvolvimento';
+let caminhoEnv = ambienteProcesso === 'producao' ? '.env' : '.env.dev'
 require('dotenv').config({ path: caminhoEnv });
 
 const express = require("express");

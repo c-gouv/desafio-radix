@@ -1,13 +1,14 @@
-[Finalizar]--------
-- Transformar os arquivos CSV na controller em objetos
+[Finalizar]------------------------
 - Enviar os objetos para o banco
 - PEDIR CHAMADO PARA BAIXAR O MYSQL SERVER & WORKBENCH
+- Decidir a regra de negócio(Se vai ou não ter cadastro)
 
-[Recentes]---------
+[Finalizados Recentemente]---------
 - Recebendo arquivo no componente e enviando pra controller
+- Transformar os arquivos CSV na controller em objetos
 - Configuração do notebook
 
-[Major]------------
+[Majors Finalizados]---------------
 - Organização das pastas
 - Componentização dos elementos
 - Páginas/rotas no front

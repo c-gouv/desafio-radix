@@ -11,4 +11,4 @@ const armazernarArquivo = multer.diskStorage({
 
 const upload = multer({ storage: armazernarArquivo });
 
-module.export = upload;
+module.exports = upload;

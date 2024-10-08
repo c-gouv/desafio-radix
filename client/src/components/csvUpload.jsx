@@ -6,7 +6,7 @@ import '../style/csvUpload.css';
 
 const CsvUpload = () => {
     const [file, setFile] = useState(null);
-    const [labelText, setLabelText] = useState('Arraste o item aqui ou Procure nos arquivos')
+    const [labelText, setLabelText] = useState(null);
     
     const mudarArquivo = (e) => {
         const arquivoSelecioando = e.target.files[0];
@@ -14,8 +14,6 @@ const CsvUpload = () => {
 
         if(arquivoSelecioando){
             setLabelText(arquivoSelecioando.name)
-        } else{
-            setLabelText('Arraste o item aqui ou Procure nos arquivos')
         }
     };
 
@@ -33,6 +31,12 @@ const CsvUpload = () => {
                     'Content-Type': 'multipart/form-data'
                 }
             });
+            
+            setFile(null);
+            setLabelText(
+            <>
+                Arraste o item aqui ou <b>Procure nos Arquivos</b>
+            </>);
 
             console.log('Arquivo subiu:', response.data);
         } catch(error){
