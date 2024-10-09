@@ -5,6 +5,7 @@
 }
 .caixa{
     width: 100%;
+    background-color: white;
     border: 1px solid black;
     border-radius: 10px;
     padding-block: 10px;

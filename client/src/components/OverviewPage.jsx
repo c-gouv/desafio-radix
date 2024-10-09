@@ -1,16 +1,25 @@
-import React from 'react';
-import AvgTabela from './avgTabela';
+import React, { useEffect } from 'react';
+import Header from './header';
+import SidebarMenu from './sidebarMenu';
+
 import OverviewHeader from './overviewHeader';
+import AvgTabela from './avgTabela';
 import KpiMedias from './kpiMedias';
 import '../style/index.css'
 
 function Overview() {
+    useEffect(() => {
+        document.title = 'Dashboard'
+    }, []);
+
     return (
         <>
-        <OverviewHeader />
+        <Header/>
+        <SidebarMenu/>
         <main>
-            <KpiMedias />
-            <AvgTabela />
+            <OverviewHeader/>
+            <KpiMedias/>
+            <AvgTabela/>
         </main>
         </>
     )

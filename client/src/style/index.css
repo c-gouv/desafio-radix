@@ -4,10 +4,20 @@
   font-family: "Kumbh Sans", sans-serif;
   font-weight: 700;
 }
+
 body{
-  padding-inline: 25px;
-  padding-top: 25px;
+  background-color: #f6f9fa;
 }
+
+main{
+  margin-left: 206px;
+  margin-top: 56px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
 #root{
   gap: 20px;
   display: flex;

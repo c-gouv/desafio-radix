@@ -1,11 +1,21 @@
-import React from 'react';
-import CsvUpload from './CsvUpload';
-import '../style/index.css'
+import React, {useEffect} from 'react';
+import SidebarMenu from './sidebarMenu';
+import CsvUpload from './csvUpload';
+import Header from './header';
+import '../style/index.css';
 
 function Upload() {
+    useEffect(() => {
+        document.title = 'Upload'
+    }, []);
+
     return (
         <>
-        <CsvUpload/>
+        <Header/>
+        <SidebarMenu/>
+        <main>
+            <CsvUpload/>
+        </main>
         </>
     )
 };

@@ -3,7 +3,7 @@ import '../style/overviewHeader.css'
 
 const OverviewHeader = () => {
     return(
-        <header>
+        <div className='overview-container'>
             <h1>RESUMO</h1>
             <div className="right-header">
                 <span>Período:</span>
@@ -14,7 +14,7 @@ const OverviewHeader = () => {
                     <option value="1m">1 Mês</option>
                 </select>
             </div>
-        </header>
+        </div>
     )
 };
 

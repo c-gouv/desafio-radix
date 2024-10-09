@@ -1,13 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap');
 *{
-    font-family: "Kumbh Sans", sans-serif;
     font-weight: 700;
     margin: 0;
     padding: 0;
-}
-
-body{
-    padding: 20px
 }
 
 .csv-upload-container{
@@ -22,7 +16,6 @@ body{
 .csv-upload-container span{
     font-weight: 500;
     color: #7a7a7a;
-    padding-top: 5px;
     font-size: 15px;
 }
 
@@ -58,23 +51,11 @@ body{
     font-size: 20px;
 }
 
-/* .archive-name{
-    color: blue !important;
-} */
-.archive-name:hover{
-    color: red !important;
-}
+
 .archive-label:hover{
-    
-    span{
+    span, .uploadIcon{
         color: red;    
-    }
-}
-
-
-
-.guide-text{
-    padding: 0;
+    }    
 }
 
 .upload-button{
