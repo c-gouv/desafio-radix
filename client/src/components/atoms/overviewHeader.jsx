@@ -1,5 +1,5 @@
 import React from 'react'
-import '../style/overviewHeader.css'
+import '../../style/overviewHeader.css'
 
 const OverviewHeader = () => {
     return(

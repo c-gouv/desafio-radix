@@ -1,5 +1,6 @@
-const mysql = require('mysql2');
+const mysql = require('mysql2/promise');
 require('dotenv').config();
+const { PROCESS, SUCCESS, ERROR } = require('../middlewares/logMessages')
 
 const configConexao = mysql.createPool ({
     host: process.env.DB_HOST,
@@ -25,10 +26,14 @@ async function executarUnico(sql, params = []) {
   
 // Executa várias instruções de um mesmo tipo de uma vez, além de permitir rollback caso dê erro
 async function executarMultiplos(transactionCallback) {
-    const conexao = await pool.getConnection();
+    const conexao = await configConexao.getConnection();
     try {
+        console.log(PROCESS + "Tentando conexão com o banco");
         await conexao.beginTransaction();
+        console.log(SUCCESS + "Conexão estabelecida");
+        console.log(PROCESS + "Começando Transação");
         const resultados = await transactionCallback(conexao);
+        console.log(SUCCESS + "Transação concluída");
         await conexao.commit();
         return resultados;
     } catch (error) {

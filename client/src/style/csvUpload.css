@@ -9,14 +9,14 @@
     flex-direction: column;
     width: max-content;
     gap: 15px;
-}
-.csv-upload-container h3{
-    padding-bottom: 5px;
-}
-.csv-upload-container span{
-    font-weight: 500;
-    color: #7a7a7a;
-    font-size: 15px;
+    h3{
+        padding-bottom: 5px; 
+    }
+    span{
+        font-weight: 500;
+        color: #7a7a7a;
+        font-size: 15px;
+    }
 }
 
 #csv-input {
@@ -34,6 +34,11 @@
     transition: background-color 200ms ease-in-out, border-color 100ms ease-in-out, color 100ms ease-in-out;
     border-radius: 10px;
     gap: 10px;
+    span{
+        font-size: 18px;
+        font-weight: 500;
+        color: #7a7a7a;
+    }
 }
 .csv-label:hover{
     background-color: #ccc;
@@ -41,16 +46,10 @@
     cursor: pointer;
 }
 
-.csv-label span{
-    font-size: 18px;
-    font-weight: 500;
-    color: #7a7a7a;
-}
 .uploadIcon{
     color: #7a7a7a;
     font-size: 20px;
 }
-
 
 .archive-label:hover{
     span, .uploadIcon{

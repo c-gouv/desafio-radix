@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import axios from 'axios';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowUpFromBracket } from '@fortawesome/free-solid-svg-icons';
-import '../style/csvUpload.css';
+import '../../style/csvUpload.css';
 
 const CsvUpload = () => {
     const [file, setFile] = useState(null);

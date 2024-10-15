@@ -16,23 +16,23 @@
     display: flex;
     flex-direction: row;
     gap: 20px;
-}
-.registro-header-right select option{
-    border-radius: 0;
+    select option{
+        border-radius: 0;
+    }
 }
 .table-registro{
     width:100%;
     border-top: 0;
+    th{
+        opacity: 0.5;
+        padding-block: 5px;
+        text-align: start;
+    }
+    td{
+        padding-bottom: 5px;
+    }
 }
-.table-registro th {
-    opacity: 0.5;
-    padding-block: 5px;
-    text-align: start;
-}
-.table-registro,.table-registro th,.table-registro td{
+.table-registro, .table-registro th, .table-registro td{
     border-collapse: collapse;
     padding-inline: 20px;
-}
-.table-registro td{
-    padding-bottom: 5px;
 }

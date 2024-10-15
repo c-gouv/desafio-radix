@@ -1,5 +1,5 @@
 import React from 'react';
-import '../style/avgTabela.css';
+import '../../style/avgTabela.css';
 
 const AvgTabela = () => {
     return (

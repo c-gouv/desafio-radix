@@ -6,13 +6,13 @@ import {faChartColumn} from '@fortawesome/free-solid-svg-icons';
 import {faFileArrowUp} from '@fortawesome/free-solid-svg-icons';
 import {faRightFromBracket} from '@fortawesome/free-solid-svg-icons';
 
-import '../style/sidebarMenu.css'
+import '../../style/sidebarMenu.css'
 
 const SidebarMenu = () => {
     const navegacao = useNavigate();
-    const local = useLocation();
-
-    const estaNaPagina = (path) => local.pathname === path;
+    const localAtual = useLocation();
+    const estaNaPagina = (path) => localAtual.pathname === path;
+    
     const navegar = (pagina) => {
         navegacao(pagina);
     }
@@ -23,8 +23,8 @@ const SidebarMenu = () => {
             <img src="./logo.png"/>
         </div>
         <ul className="sidebar-content">
-            <li onClick={() => navegar('/')} style={{
-                backgroundColor: estaNaPagina('/') ? '#d1d1d1' : ''
+            <li onClick={() => navegar('/home')} style={{
+                backgroundColor: estaNaPagina('/home') ? '#d1d1d1' : ''
             }}>
                 <FontAwesomeIcon icon={faChartColumn} className='sidebarIcon'/>
                 <span>Dashboard</span>
