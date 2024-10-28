@@ -17,6 +17,11 @@ const SidebarMenu = () => {
         navegacao(pagina);
     }
 
+    const encerrarSessao = () => {
+        sessionStorage.clear();
+        navegar('/')
+    }
+
     return (
         <aside className="sidebar">
         <div className="sidebar-header">
@@ -37,7 +42,7 @@ const SidebarMenu = () => {
             </li>
         </ul>
         <ul className="sidebar-footer">
-            <li>
+            <li onClick={encerrarSessao}>
                 <FontAwesomeIcon icon={faRightFromBracket} className='sidebarIcon'/>
                 <span>Logout</span>
             </li>

@@ -1,23 +1,41 @@
 .registro-container{
-    box-sizing: border-box;
     width: 100%;
-    border-radius: 10px;
-    border: 1px solid black;
-    padding-block: 15px;
-    padding-inline: 20px;
     background-color: white;
+    border: 1px solid rgba(193, 193, 193, 0.501);
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding-block: 10px;
+    padding-inline: 20px;
+
+    h3{
+        margin: 0;
+        font-weight: 400;
+        margin-bottom: 5px;
+        text-align: center;
+    }
 }
 .registro-header{
+    margin-bottom: 10px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+}
+.all-avg{
+    width: auto;
 }
 .registro-header-right{
     display: flex;
     flex-direction: row;
     gap: 20px;
-    select option{
-        border-radius: 0;
+    select{
+        border-radius: 10px;
+        padding: 5px 10px;
+    }
+    input{
+        border-radius: 10px;
+        border: 1px solid black;
+        padding-inline: 10px;
     }
 }
 .table-registro{
@@ -34,5 +52,5 @@
 }
 .table-registro, .table-registro th, .table-registro td{
     border-collapse: collapse;
-    padding-inline: 20px;
+    /* padding-inline: 20px; */
 }

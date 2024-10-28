@@ -109,3 +109,11 @@ body, #root{
 .wired-butotn:hover{
     background-color: #d1d1d1;
 }
+
+.log-message{
+    color: red;
+    text-align: center;
+    font-size: 14px;
+    margin-block: 5px;
+    font-weight: 400;
+}

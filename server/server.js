@@ -13,13 +13,18 @@ const corsOptions = {
 }
 
 // Chamando as rotas
-const indexRouter = require("./routes/index");
 const csvRouter = require("./routes/csvRouter");
+const graphDataRouter = require("./routes/graphDataRouter");
+const userRouter = require("./routes/userRouter");
+const highestDataRouter = require('./routes/highestDataRouter');
 
 // Usando as rotas
+app.use(express.json());
 app.use(cors(corsOptions));
-app.use("/api", indexRouter);
 app.use("/upload", csvRouter);
+app.use("/graphData", graphDataRouter);
+app.use("/users", userRouter)
+app.use("/highestData", highestDataRouter)
 
 app.listen(portaApp, function(){
     console.log(`
